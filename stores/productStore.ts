@@ -16,7 +16,7 @@ export const useProductStore = defineStore('product', {
   }),
   actions: {
     async fetchProducts() {
-      const response = await fetch('https://my-json-server.typicode.com/DinaSri/Test/products');
+      const response = await fetch('https://my-json-server.typicode.com/DinaSri/Test-Catalog/products');
       const data = await response.json();
       this.products = data; 
     },
