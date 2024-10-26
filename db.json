@@ -1,0 +1,80 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Makanan Kucing Kering Cat Dry Food Bolt Kitten 1 Kg Salmon – Happycatindo",
+      "price": 25700,
+      "description": "Bolt Salmon Kitten Cat Food Kibble Half Moon merupakan pakan kucing yang tinggi protein untuk menunjang pertumbuhan kucing kitten, mendukung pembentukan gigi dan tulang, serta mampu meningkatkan fungsi pencernaan.",
+      "image": "https://evermos.com/home/wp-content/uploads/2023/08/836c6ca7-d37a-41cb-b376-1f9b13b35614.jpg",
+      "variants": [
+        {
+          "id": 101,
+          "size": "1kg",
+          "stock": 50
+        },
+        {
+          "id": 102,
+          "size": "2kg",
+          "stock": 30
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Makanan Kucing Kering Cat Choize Kitten Dry Food – Happycatindo",
+      "price": 27900,
+      "description": "Cat Choize Kitten Food diformulasikan untuk memenuhi kebutuhan nutrisi anak kucing. Mengandung nutrisi lengkap, vitamin dan mineral yang membantu memperkuat sistem kekebalan tubuh, serta mendukung pertumbuhan dan perkembangan yang tepat pada anak kucing Anda pada masa pertumbuhannya.",
+      "image": "https://evermos.com/home/wp-content/uploads/2023/08/15ee49aa-cd61-492f-8c35-5781de89552c.jpg",
+      "variants": [
+        {
+          "id": 201,
+          "size": "1kg",
+          "stock": 40
+        },
+        {
+          "id": 202,
+          "size": "3kg",
+          "stock": 20
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Makanan Kucing Kering Cat Dry Food Bolt – Happycatindo",
+      "price": 23600,
+      "description": "BOLT Tuna Cat Food – 1 Kg merupakan pakan kucing usia di atas 1 tahun, yang diperkaya dengan taurine, antioksidan, vitamin dan mineral. Bermanfaat untuk membuat kulit sehat dan bulu berkilau, serta mengurangi resiko FLUTD (penyakit saluran kemih pada kucing).",
+      "image": "https://evermos.com/home/wp-content/uploads/2023/08/d87d3880-98b7-4e1a-a24c-adfd128a1ef3.jpg",
+      "variants": [
+        {
+          "id": 301,
+          "size": "500g",
+          "stock": 60
+        },
+        {
+          "id": 302,
+          "size": "1.5kg",
+          "stock": 35
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Makanan Kucing Kering Cat Dry Food Excel – Happycatindo",
+      "price": 15300,
+      "description": "EXCEL CAT adalah jajaran produk berkualitas tinggi kami menggunakan bahan baku impor berkualitas yang 100% alami. Protein tinggi berasal dari daging ayam dan ikan asli, kaya akan taurine, omega 3 dan 6 serta mineral yang baik bagi tubuh.",
+      "image": "https://evermos.com/home/wp-content/uploads/2023/08/6ee8f9c1-3efb-4f5e-b138-5b42f356bd2c.jpg",
+      "variants": [
+        {
+          "id": 401,
+          "size": "500g",
+          "stock": 60
+        },
+        {
+          "id": 402,
+          "size": "1.5kg",
+          "stock": 35
+        }
+      ]
+    }
+  ]
+}

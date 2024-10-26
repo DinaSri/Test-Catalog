@@ -1,0 +1,180 @@
+// main.scss
+
+@import 'variables';
+@import 'mixins';
+@import 'components';
+
+body {
+  font-family: Poppins, sans-serif;
+  background-color: $background-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}
+// Navbar styles
+.navbar {
+  background-color: #003138;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    @media (max-width: 768px) {
+      width: 90px;
+      object-fit: contain;
+      font-size: 10px;
+    }
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+
+    li {
+      a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #ffa500; // Change color on hover
+        }
+      }
+    }
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+}
+
+.product-catalog {
+  padding: $padding;
+  @media (max-width: 768px) {
+    padding: 0px;
+  }
+  h1 {
+    font-size: $font-size-large;
+    color: $text-color;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: $padding;
+    @media (max-width: 768px) {
+      padding-top: 40px
+    }
+  }
+}
+
+
+$image-slider-width: 100%; // You can adjust this width if needed
+$slide-info-background: rgba(0, 0, 0, 0.5); // Semi-transparent background for text
+
+.wrap-landing-page {
+  display: flex;
+  justify-content: space-between;
+  transition: transform 0.5s ease-in-out; 
+  gap: 30px;
+  padding: 3rem 7rem;
+  @media (max-width: 768px) {
+    display: block;
+    padding: 2rem 1rem;
+  }
+
+}
+.wrap-slider {
+  width: 50%;
+  margin: 0 auto;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+.image-slider {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  width: $image-slider-width; // Make it responsive
+
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out; // Smooth transition for sliding effect
+
+    .slide {
+      min-width: $image-slider-width; // Each slide takes full width
+      position: relative; // For positioning text over the image
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block; // Removes bottom space
+        border-radius: 20px;
+      }
+
+      .slide-info {
+        position: absolute; // Positioning text over the image
+        bottom: 0px; // Adjust as needed
+        left: 0px; // Adjust as needed
+        color: white; // Contrast text color
+        background: $slide-info-background; // Semi-transparent background
+        padding: 10px; // Padding for the text
+        border-radius: 20px; // Rounded corners for the text box
+      }
+    }
+  }
+
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%; // Center the buttons vertically
+    transform: translateY(-50%);
+    background: #003138;
+    border: none;
+    font-size: 2em; // Button size
+    cursor: pointer;
+    z-index: 1; // Ensure buttons are above the images
+
+    &.prev {
+      left: 10px; // Position left
+      color: white;
+    }
+
+    &.next {
+      right: 10px; // Position right
+      color: white;
+    }
+  }
+}
+
+.back-button {
+  width: 30%;
+  height: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+}
